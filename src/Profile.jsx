@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 const Profile = () => {
     return (
         <div>
@@ -6,6 +6,9 @@ const Profile = () => {
             <p>So, how are you?</p>
             <hr />
             <h2>The profile visited is here:</h2>
+            <Link to="spinach">Spinach</Link>
+            <br />
+            <Link to="popeye">Popeye</Link>
             <Outlet />
         </div>
     )
